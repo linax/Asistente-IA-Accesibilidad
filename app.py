@@ -65,7 +65,7 @@ if prompt := st.chat_input("Ej: ¿Cómo denuncio discriminación laboral?"):
         try:
             # Usamos gemini-2.0-flash para balance entre velocidad y razonamiento legal
             response = client.models.generate_content(
-                model="gemini-2.0-flash",
+                model="models/gemini-2.5-flash",
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     system_instruction=SYSTEM_PROMPT,
