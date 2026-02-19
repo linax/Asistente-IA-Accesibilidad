@@ -4,6 +4,15 @@ from google.genai import types
 
 # 1. Configuración de la interfaz
 st.set_page_config(page_title="Asistente Accesibilidad Chile", page_icon="♿")
+st.markdown("""
+    <style>
+       
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        .stDeployButton {display:none;}
+        header {visibility: hidden;}
+    </style>
+""", unsafe_allow_html=True)
 st.title("♿ Asistente de Derechos y Accesibilidad")
 st.markdown("Orientación legal y técnica basada en la normativa chilena vigente.")
 
